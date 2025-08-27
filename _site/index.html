@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
   <meta name="generator" content="distill" />
-  <link rel="alternate" type="application/rss+xml" href="https://milesmcbain.com/index.xml" />
+  <link rel="alternate" type="application/rss+xml" href="https://cosmicspace.me/index.xml" />
 
   <style type="text/css">
   /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
@@ -33,7 +33,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -89,7 +89,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--radix_placeholder_meta_tags-->
-  <title>Before I Sleep: Posts</title>
+  <title>Freedom to Animals: Posts</title>
 
 
   <link rel="license" href="https://creativecommons.org/licenses/by/4.0/"/>
@@ -97,15 +97,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Before I Sleep: Posts"/>
+  <meta property="og:title" content="Freedom to Animals: Posts"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Before I Sleep"/>
+  <meta property="og:site_name" content="Freedom to Animals"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Before I Sleep: Posts"/>
-  <meta property="twitter:site" content="@milesmcbain"/>
+  <meta property="twitter:title" content="Freedom to Animals: Posts"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
@@ -2100,7 +2099,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.26/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2110,34 +2109,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
   <script src="site_libs/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (!/posts/.test(location.pathname)) {
-        return;
-      }
-
-      var script = document.createElement("script");
-      script.src = "https://utteranc.es/client.js";
-      script.setAttribute("repo", "milesmcbain/milesmcbain.com");
-      script.setAttribute("issue-term", "og:title");
-      script.setAttribute("crossorigin", "anonymous");
-      script.setAttribute("label", "comment_thread");
-
-      /* wait for article to load, append script to article element */
-      var observer = new MutationObserver(function (mutations, observer) {
-        var article = document.querySelector("d-article");
-        if (article) {
-          observer.disconnect();
-          /* HACK: article scroll */
-          article.setAttribute("style", "overflow-y: hidden");
-          article.appendChild(script);
-        }
-      });
-
-      observer.observe(document.body, { childList: true });
-    });
-  </script>
-
   <style type="text/css">
   /* Import fonts from Google's API */
   @import url('https://fonts.googleapis.com/css2?family=Cardo');
@@ -2229,17 +2200,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a class="logo" href="https://milesmcbain.xyz">
+<a class="logo" href="https://cosmicspace.me">
 <img src="images/i_like_turtles_bis.png" alt="Logo"/>
 </a>
-<a href="index.html" class="title">Before I Sleep</a>
+<a href="index.html" class="title">Freedom to Animals</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
 <a href="index.html">Home</a>
-<a href="https://milesmcbain.micro.blog">micro.blog</a>
-<a href="talks.html">Talks</a>
-<a href="other_writings.html">Other writings</a>
 <a href="about.html">About</a>
 <a href="index.xml">
 <i class="fa fa-rss" aria-hidden="true"></i>
@@ -2384,698 +2352,9 @@ function init_posts_list() {
 
 
 
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
+<div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
 <h1 class="posts-list-caption" data-caption="Posts">Posts</h1>
-<a href="posts/data-analysis-reuse/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data science","workflows"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 11, 2024</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/data-analysis-reuse/copy5.png"/>
-</div>
-<div class="description">
-<h2>Patterns and anti-patterns of data analysis reuse</h2>
-<div class="dt-tags">
-<div class="dt-tag">data science</div>
-<div class="dt-tag">workflows</div>
-</div>
-<p>A speed-run through four stages of data analysis reuse, to the end game you probably guessed was coming.</p>
-</div>
-</a>
-<a href="posts/tribe-evamos-longtail-cargo-review/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["review","cargobikes"]}</script>
-<div class="metadata">
-<div class="publishedDate">Oct. 23, 2023</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/tribe-evamos-longtail-cargo-review/evamos_city.jpg"/>
-</div>
-<div class="description">
-<h2>12 months and 2700km with the Tribe Evamos Longtail cargo ebike: Review</h2>
-<div class="dt-tags">
-<div class="dt-tag">review</div>
-<div class="dt-tag">cargobikes</div>
-</div>
-<p>I review our car-replacement cargo ebike one year on.</p>
-</div>
-</a>
-<a href="posts/assertive-programming-for-pipelines/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","workflow"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 23, 2023</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/assertive-programming-for-pipelines/pipelines.png"/>
-</div>
-<div class="description">
-<h2>How to be assertive about not testing your data science pipeline</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">workflow</div>
-</div>
-<p>An introduction to assertive programming as an alternative to testing</p>
-</div>
-</a>
-<a href="posts/vector-tiles/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","vector-tiles","spatial"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 10, 2022</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/vector-tiles/fire_and_ice.png"/>
-</div>
-<div class="description">
-<h2>Push the limits of interactive mapping in R with vector tiles</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">vector-tiles</div>
-<div class="dt-tag">spatial</div>
-</div>
-<p>A tutorial on mapping with vector tiles in R</p>
-</div>
-</a>
-<a href="posts/zsa-moonlander-review/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["keyboards","ergonomics","review"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 20, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img src="posts/zsa-moonlander-review/moonlander_new.jpg"/>
-</div>
-<div class="description">
-<h2>60 Days with the ZSA Moonlander: Review</h2>
-<div class="dt-tags">
-<div class="dt-tag">keyboards</div>
-<div class="dt-tag">ergonomics</div>
-<div class="dt-tag">review</div>
-</div>
-<p>I spent 60 days with the ZSA Moonlander Keyboard and ultimately returned it. I wanted to like it, but couldn't make the ergonomics work for me.</p>
-</div>
-</a>
-<a href="posts/the-stack/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","collaboration","workflow","reproducibility","runapp"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 17, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/the-stack/the_stack.png"/>
-</div>
-<div class="description">
-<h2>A Public Service Data Science Stack: Collaboration</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">collaboration</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">reproducibility</div>
-<div class="dt-tag">runapp</div>
-</div>
-<p>git, GitHub, {targets}, VSCode, and other tools that our data science team uses to collaborate.</p>
-</div>
-</a>
-<a href="posts/adding-addins-to-vscode/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","vscode","rstudio"]}</script>
-<div class="metadata">
-<div class="publishedDate">Oct. 22, 2020</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/adding-addins-to-vscode/vscode_addins.png"/>
-</div>
-<div class="description">
-<h2>Adding RStudio Addins to VSCode</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">vscode</div>
-<div class="dt-tag">rstudio</div>
-</div>
-<p>Technical details and select highlights of my project to bring RStudio addins to VSCode.</p>
-</div>
-</a>
-<a href="posts/an-okay-idea/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","workflow","data science"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 24, 2020</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/an-okay-idea/corrugated-cardboard-3853506_1280.jpg"/>
-</div>
-<div class="description">
-<h2>Project as an R package: An okay idea</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">data science</div>
-</div>
-<p>The overarching problem I see with conforming analysis to the package domain, is that it introduces artifacts not of the project domain and that makes the project harder to comprehend</p>
-</div>
-</a>
-<a href="posts/the-drake-post/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","productivity","workflow","reproducibility","debugging"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 30, 2020</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/the-drake-post/spinach_small.jpg"/>
-</div>
-<div class="description">
-<h2>Benefits of a function-based diet (The {drake} post)</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">productivity</div>
-<div class="dt-tag">workflow</div>
-<div class="dt-tag">reproducibility</div>
-<div class="dt-tag">debugging</div>
-</div>
-<p>The {drake} post I've been threatening to make has landed. All 4000 words of it.</p>
-</div>
-</a>
-<a href="posts/recover/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","debugging"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 28, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/recover/recover_vid.png"/>
-</div>
-<div class="description">
-<h2>Stop() - breathe - recover()</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">debugging</div>
-</div>
-<p>Over the last couple of months a debugging technique involving an R function called `recover` has transformed my approach dealing with errors in R code. This post is an introduction to a ~20min video I've made where I demonstrate my `recover` approach on two examples.</p>
-</div>
-</a>
-<a href="posts/hacking-r-library-paths/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","hacks"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 20, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/hacking-r-library-paths/Monkey-typing.jpg"/>
-</div>
-<div class="description">
-<h2>Hacking R's library paths</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">hacks</div>
-</div>
-<p>If you've been tripped up by R's library paths in the past, or you just enjoy a good hack, you might appreciate this little trick</p>
-</div>
-</a>
-<a href="posts/packrat-lite/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","reproducibility"]}</script>
-<div class="metadata">
-<div class="publishedDate">April 9, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/packrat-lite/nutria-1200457_1920.jpg"/>
-</div>
-<div class="description">
-<h2>A workflow for lightweight R dependency management</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">reproducibility</div>
-</div>
-<p>Recently I proudly shared some code that was only weeks old and had maybe 40 dependencies... what could possibly go wrong right?</p>
-</div>
-</a>
-<a href="posts/for-loops/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","loops"]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 14, 2019</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/for-loops/1024px-Apocalypse_vasnetsov.jpg"/>
-</div>
-<div class="description">
-<h2>Horseman number for</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">loops</div>
-</div>
-<p>Two #rstats community personalities whom I very much admire have taken my name in vain in relation to for loops. What's up with that?</p>
-</div>
-</a>
-<a href="posts/rstats-anti-pattern-row-wise/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","loops"]}</script>
-<div class="metadata">
-<div class="publishedDate">Dec. 7, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/rstats-anti-pattern-row-wise/El_Diablo_Roller_Coaster.jpg"/>
-</div>
-<div class="description">
-<h2>R anti-pattern: Row-wise modification of data in a loop</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">loops</div>
-</div>
-<p>The Row-wise modification of data in a loop is a trap for programmers coming to R from other languages.</p>
-</div>
-</a>
-<a href="posts/the-roots-of-quotation/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","lisp"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 26, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/the-roots-of-quotation/Quote---2-.jpg"/>
-</div>
-<div class="description">
-<h2>The Roots of Quotation</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">lisp</div>
-</div>
-<p>In this post I use Lisp as a prop to have the quoting conversation from the start. It's a deep dive that will hopefully arrive at a deep understanding.</p>
-</div>
-</a>
-<a href="posts/r2vr3-shading-meshes-in-webvr/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","R2VR"]}</script>
-<div class="metadata">
-<div class="publishedDate">July 5, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/r2vr3-shading-meshes-in-webvr/uluru_header.png"/>
-</div>
-<div class="description">
-<h2>R2VR: Shading Meshes in WebVR</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">R2VR</div>
-</div>
-<p>In this post I'll contiue to riff on the Uluru mesh, discussing how to colour a WebVR mesh by shading using a raster layer, or applying a texture.</p>
-</div>
-</a>
-<a href="posts/crushing-the-contact-details-file/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","regex","productivity"]}</script>
-<div class="metadata">
-<div class="publishedDate">June 24, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/crushing-the-contact-details-file/1024px-Batman_-truck-.jpg"/>
-</div>
-<div class="description">
-<h2>Crushing the Contact Details file with #rstats</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">regex</div>
-<div class="dt-tag">productivity</div>
-</div>
-<p>It is a universal law that if you volunteer to help organise something, you will at some stage be issued with a flat text file of contact details.</p>
-</div>
-</a>
-<a href="posts/r2vr2-rendering-meshes-in-webvr/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","R2VR"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 29, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/r2vr2-rendering-meshes-in-webvr/rock_opera.png"/>
-</div>
-<div class="description">
-<h2>R2VR: Rendering Meshes in WebVR</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">R2VR</div>
-</div>
-<p>How to render a 3D mesh of Uluru in WebVR using the A-Frame framework via R.</p>
-</div>
-</a>
-<a href="posts/2018-in-pursuit-of-productivity/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["productivity","software development"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 23, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/2018-in-pursuit-of-productivity/corn-flakes-1915632_1280.jpg"/>
-</div>
-<div class="description">
-<h2>2018: In Pursuit of Productivity</h2>
-<div class="dt-tags">
-<div class="dt-tag">productivity</div>
-<div class="dt-tag">software development</div>
-</div>
-<p>2018 was probably my busiest year on record. I reflect on some of the productivity tools that got me through.</p>
-</div>
-</a>
-<a href="posts/solving-the-challenge-of-tidyeval/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","tidyverse","tidyeval"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 23, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/solving-the-challenge-of-tidyeval/9972796593_14695448e7_b.jpg"/>
-</div>
-<div class="description">
-<h2>Solving the Challenge of Tidyeval</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">tidyverse</div>
-<div class="dt-tag">tidyeval</div>
-</div>
-<p>Ok here's the vignette... scroll scroll scroll... now I just quo... no wait enquo, no wait sym? Ahhh! equos that has to be it...</p>
-</div>
-</a>
-<a href="posts/how-to-survive-a-laptop-fire/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["software development"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 20, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/how-to-survive-a-laptop-fire/Burned_laptop_secumem_11.jpg"/>
-</div>
-<div class="description">
-<h2>How to Survive a Laptop Fire</h2>
-<div class="dt-tags">
-<div class="dt-tag">software development</div>
-</div>
-<p>How bad would it be for your work if your laptop burned in a fire?</p>
-</div>
-</a>
-<a href="posts/r2v1-meshing-uluru-from-polygons-and-rasters/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","WebVR","R2VR","GIS"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 27, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/r2v1-meshing-uluru-from-polygons-and-rasters/1200px-Uluru1_2003-11-21.jpg"/>
-</div>
-<div class="description">
-<h2>R2VR: Meshing Uluru From Polygons and Rasters</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">WebVR</div>
-<div class="dt-tag">R2VR</div>
-<div class="dt-tag">GIS</div>
-</div>
-<p>In this post I describe using R to make a 3D mesh of Uluru from publicly available spatial data.</p>
-</div>
-</a>
-<a href="posts/r2vr/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","R2VR","WebVR","GIS"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 27, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/r2vr/acp_vegetation.png"/>
-</div>
-<div class="description">
-<h2>Introducing #R2VR</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">R2VR</div>
-<div class="dt-tag">WebVR</div>
-<div class="dt-tag">GIS</div>
-</div>
-<p></p>
-</div>
-</a>
-<a href="posts/ropensci-onboarding2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","rOpenSci","open science"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 26, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/ropensci-onboarding2/1200px-Satin_bowerbird.jpg"/>
-</div>
-<div class="description">
-<h2>Where is the value in package peer review? Reflection #2 on rOpenSci Onboarding</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">rOpenSci</div>
-<div class="dt-tag">open science</div>
-</div>
-<p>How is a package peer reviewer’s time best spent? When is the best time in a software package’s life cycle to undertake peer review? A user-driven perspective.</p>
-</div>
-</a>
-<a href="posts/a-fully-dockerised-ghost-blog/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["ghost","docker"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 8, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/a-fully-dockerised-ghost-blog/g1.png"/>
-</div>
-<div class="description">
-<h2>A Fully Dockerised HTTPS Ghost Blog</h2>
-<div class="dt-tags">
-<div class="dt-tag">ghost</div>
-<div class="dt-tag">docker</div>
-</div>
-<p>The installation documentation for Ghost is comprehensive, but beyond my skill as a system administrator to complete. Docker to the rescue!</p>
-</div>
-</a>
-<a href="posts/ropensci-onboarding1/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["rstats","open science","rOpenSci"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 6, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/ropensci-onboarding1/640px-Wet-n-Wild_Water_World_Australia_Mach_5.jpg"/>
-</div>
-<div class="description">
-<h2>Waterslides vs Ivory Towers: Reflection #1 on rOpenSci Onboarding</h2>
-<div class="dt-tags">
-<div class="dt-tag">rstats</div>
-<div class="dt-tag">open science</div>
-<div class="dt-tag">rOpenSci</div>
-</div>
-<p>Onboarding is a waterslide. rOpenSci have created a rewarding and fun process that generates high quality R packages.</p>
-</div>
-</a>
-<a href="posts/alt-r-with-vscode/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 22, 2018</div>
-<div class="dt-authors">
-<div class="dt-author">Miles McBain</div>
-</div>
-</div>
-<div class="thumbnail">
-<img data-src="posts/alt-r-with-vscode/hover_help2.gif"/>
-</div>
-<div class="description">
-<h2>Going Alt-RStats with VSCode</h2>
-<div class="dt-tags"></div>
-<p>I never want to see another CSV that isn't rainbow!</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:Articles">Articles</a>
-<span class="category-count">(27)</span>
-</li>
-<li>
-<a href="#category:cargobikes">cargobikes</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:collaboration">collaboration</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:data_science">data science</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:debugging">debugging</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:docker">docker</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:ergonomics">ergonomics</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:ghost">ghost</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:GIS">GIS</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:hacks">hacks</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:keyboards">keyboards</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:lisp">lisp</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:loops">loops</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:open_science">open science</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:productivity">productivity</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:R2VR">R2VR</a>
-<span class="category-count">(4)</span>
-</li>
-<li>
-<a href="#category:regex">regex</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:reproducibility">reproducibility</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:review">review</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:rOpenSci">rOpenSci</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:rstats">rstats</a>
-<span class="category-count">(20)</span>
-</li>
-<li>
-<a href="#category:rstudio">rstudio</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:runapp">runapp</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:software_development">software development</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:spatial">spatial</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:tidyeval">tidyeval</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:tidyverse">tidyverse</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:vector-tiles">vector-tiles</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:vscode">vscode</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:WebVR">WebVR</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:workflow">workflow</a>
-<span class="category-count">(4)</span>
-</li>
-<li>
-<a href="#category:workflows">workflows</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
 </div>
 <div class="posts-more">
 <a href="#">More articles &raquo;</a>
@@ -3107,15 +2386,14 @@ function init_posts_list() {
 <!--radix_placeholder_appendices-->
 <div class="appendix-bottom">
 <h3 id="updates-and-corrections">Corrections</h3>
-<p>If you see mistakes or want to suggest changes, please <a href="https://www.github.com/milesmcbain/website_distill/issues/new">create an issue</a> on the source repository.</p>
+<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/cosmicwaves/cosmicspace.me/issues/new">create an issue</a> on the source repository.</p>
 <h3 id="reuse">Reuse</h3>
-<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https://www.github.com/milesmcbain/website_distill">https://www.github.com/milesmcbain/website_distill</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Source code is available at <a href="https://github.com/cosmicwaves/cosmicspace.me">https://github.com/cosmicwaves/cosmicspace.me</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
 </div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p><a rel="me" href="https://fosstodon.org/@milesmcbain">This link
-verifies I am me in the Fediverse</a></p>
+
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
